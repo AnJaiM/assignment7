@@ -1,0 +1,38 @@
+header, footer, aside, nav {
+    background-color: skyblue;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: black;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+}
+
+table {
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    border: 1px solid black;
+  }
+
+a:link {
+    color: darkblue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.class {
+    color: dimgray;
+    font-weight: bold;
+}

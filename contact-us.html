@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <form name="contactForm" method="post" action="mailto:anjai2203@gmail.com">
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Motive for Contacting</legend>
+                    <label for="photography">
+                        <input type="checkbox" id="photography" name="reasons" value="photography">
+                        Photography
+                    </label>
+                    <br>
+                    <label for="cinematography">
+                        <input type="checkbox" id="cinematography" name="reasons" value="cinematography">
+                        Cinematography
+                    </label>
+                    <br>
+                    <label for="gaming">
+                        <input type="checkbox" id="gaming" name="reasons" value="gaming">
+                        Gaming
+                    </label>
+                </fieldset>
+
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="" disabled selected>Select a country</option>
+                    <option value="usa">USA</option>
+                    <option value="mex">Mexico</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+
+        <table>
+            <caption>Service Options</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Service</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Photos</th>
+                    <th scope="col">Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th  scope="row">Session</th>
+                    <td>A 3 hour photo session in a location of your choosing. Includes edited photos.</td>
+                    <td>50</td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <th scope="row">Studio</th>
+                    <td >A 2 hour studio session. Includes edited photos.</td>
+                    <td>50</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <th scope="row">Advertisement</th> 
+                    <td>Photos for your product to advertise online. Includes 10 edited photos</td>
+                    <td>15</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <th scope="row">Event</th> 
+                    <td>Session covers length of event. Includes 150 edited photos plus 10 prints of choice.</td>
+                    <td>150</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <th scope="row">Event + Video</th> 
+                    <td>Includes full video coverage of the event and includes 150 edited photos plus 15 prints of choice</td>
+                    <td>150 + Video</td>
+                    <td>$600</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+</body>
+
+</html>
